@@ -1,0 +1,69 @@
+﻿
+
+@{
+    ViewData["Title"] = "LoginUser";
+}
+
+<style>
+
+    .bgI {
+        background: url(../Images/trading_Image_3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @@media (min-width: 768px) {
+        .bgI {
+            background-position: 58.33325% center;
+        }
+    }
+</style>
+<body class=" bg-image bgI">
+    <section>
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h3 class="text-uppercase text-center mb-4">Sign In</h3>
+
+                                <form method="post" enctype="multipart/form-data" asp-controller="Login" asp-action="UserLogin">
+
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" id="Name" class="form-control" placeholder="Enter your Name" name="Name" />
+                                        <span class="text-danger"></span>
+                                    </div>
+
+
+
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" id="Password" class="form-control" placeholder="Enter your Password" name="Password" />
+                                        <span class="text-danger"></span>
+                                    </div>
+
+
+
+                                    <div class="d-flex justify-content-center mb-4">
+                                        <button type="submit" class="btn btn-success btn-block btn-lg   text-body">Login</button>
+                                    </div>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

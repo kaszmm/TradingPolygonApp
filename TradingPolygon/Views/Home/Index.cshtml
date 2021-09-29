@@ -1,0 +1,52 @@
+﻿@model ApiCallLibrary.StockDataModel[]
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    .special-card-color {
+        @{ 
+            Random r = new Random();
+            int a=r.Next(0, 254);
+            Random r2 = new Random();
+            int b = r2.Next(40,200);
+            Random r3 = new Random();
+            int c = r3.Next(50,180);
+        }
+        background-color: rgba( @a, @b, @c, 1);
+        opacity: .7;
+    }
+    .card-body {
+        border-radius: 13px;
+    }
+</style>
+
+<h1>Polygon Stock Data</h1>
+
+<div class="container-fluid d-flex flex-row flex-wrap">
+   
+    <div  class="row equal  justify-content-between">
+        @foreach (var item in Model)
+        {
+
+            <div class=" col-sm-12 col-md-6 col-lg-3 mb-3">
+
+                <div class="card h-100 mr-2 " >
+                    <div class="card-body special-card-color text-black" >
+                        <h5 class="card-title"><b>Stock info</b></h5>
+                        <p>   </p>
+                        <h6 class="card-subtitle mb-2 "><u>Ticker</u>:  @item.Ticker</h6>
+                        <h6 class="card-subtitle mb-2 "><u>Name</u>:  @item.Name</h6>
+                        <h6 class="card-subtitle mb-2 "><u>Market</u>:  @item.Market</h6>
+                        <h6 class="card-subtitle mb-2 "><u>DateTime</u>:  @item.Last_updated_utc.</h6>
+
+                    </div>
+                </div>
+
+            </div>
+
+        }
+    </div>
+</div>
+
