@@ -1,11 +1,22 @@
-Instructions
+-->Instructions
 1) Upon opening the project in web server you will have to register your name adn other details in it 
 2) After registering you will redirect to login page , upon successfully logging in you will be reirected to Main Home Page 
 3)On main home page the details of Stock is displayed through Api Calls
 4)Logging is also done using Jwt Token
 Just in case you face any error on executing the project please contact me i will try my best to resolve it.
 
-Background
+
+-->What i have Completed in Assignment:
+1)Jwt Implementation in login
+2)Saving userData in MsSql from Registeration Form
+3)Retriving Data from Polygon Api
+4)Puting project in Git Repos and documenting Instructions
+
+
+
+
+
+-->Background
 As for me i founded the time given was less, so i tried my best to implement as much thing as possible in this project.
 Also thanks to you i also learned many new things throughout creating this project.
 Hope you can find my half done assignment acceptable.
