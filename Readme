@@ -3,8 +3,7 @@ Instructions
 2) After registering you will redirect to login page , upon successfully logging in you will be reirected to Main Home Page 
 3)On main home page the details of Stock is displayed through Api Calls
 4)Logging is also done using Jwt Token
-
-
+Just in case you face any error on executing the project please contact me i will try my best to resolve it.
 
 Background
 As for me i founded the time given was less, so i tried my best to implement as much thing as possible in this project.
