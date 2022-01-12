@@ -5,7 +5,6 @@
 4)Logging is also done using Jwt Token
 Just in case you face any error on executing the project please contact me i will try my best to resolve it.
 
-Note: Keep Upload Image part null in Register Form .
 
 
 
@@ -14,13 +13,4 @@ Note: Keep Upload Image part null in Register Form .
 1)Jwt Implementation in login
 2)Saving userData in MsSql from Registeration Form
 3)Retriving Data from Polygon Api
-4)Puting project in Git Repos and documenting Instructions
 
-
-
-
-
--->Background
-As for me i founded the time given was less, so i tried my best to implement as much thing as possible in this project.
-Also thanks to you i also learned many new things throughout creating this project.
-Hope you can find my half done assignment acceptable.
